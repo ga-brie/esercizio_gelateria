@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Gelateria Tipi Perigolosi - Registrati </title> <!-- massimo 70 caratteri -->
+<meta name="description" content="La gelateri Tipi Perigolosi vi invita ad assaggiare i migliori gelati di Padova"> <!-- testo descrittivo - massimo 160 caratteri -->
+<meta name="author" content="Gabriella"> <!-- riferimento sviluppatore-->
+<meta name="copyright" content=" Copyright @ 2019 - Gabriella - riferimento dello sviluppatore"> <!-- image può avere diversi formati: gif, jpg, svg - formato quadrato 32x32 px 64x64 -->
+<meta name ="keywords" content="non esiste più"> 
+<link rel="icon" href="img/favicon.png" type="image/png"> 
+<!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+<!-- mela+tab per far rientrare il codice a sx -->
+<body> 
+<form action="elabora-registrazione.php" method="post" enctype="multipart/form-data">
+	<p>
+		<label for="nome_for">Nome</label><br>
+		<input id="nome_for" type="text" name="nome_utente">
+	</p>
+	<p>
+		<label for="nome_for">Cognome</label><br>
+		<input id="nome_for" type="text" name="cognome_utente">
+	</p>
+	<p>
+		<label>Sesso</label><br>
+		<input type="radio" name="sesso" value="maschile"> Maschile
+		<input type="radio" name="sesso" value="femminile"> Femminile
+		<input type="radio" name="sesso" value="indefinito"> Fluido
+	</p>
+	<p>
+		<label>Seleziona la provincia di provenienza:</label>
+		<select name="citta">
+			<option value="scegli">Scegli</option>
+			<optgroup label="Veneto">
+			<option value="Belluno">Belluno</option>
+			<option value="Padova" selected>Padova</option>
+			<option value="Rovigo">Rovigo</option>
+			<option value="Vicenza">Vicenza</option>
+			<option value="Treviso">Treviso</option>
+			<option value="Venezia">Venezia</option>
+			<option value="Vicenza">Vicenza</option>
+			</optgroup>
+			<optgroup label="Lombardia">
+			<option value="Rovigo">Brescia</option>
+			<option value="Vicenza">Mantova</option>
+			<option value="Treviso">Milano</option>
+			</optgroup>
+			<optgroup label="Friuli Venezia Giulia">
+			<option value="Rovigo">Tiresta</option>
+			<option value="Vicenza">Udine</option>
+			<option value="Treviso">Gorizia</option>
+			</optgroup>
+		</select>
+	</p>
+	<p>
+		<label for="telefono_for">Inserisci il numero di tel</label><br>
+		<input id="telefono_for" type="tel" name="telefono_utente" pattern="[0-9]+">
+	</p>
+	<p>
+		<label for="eta_for">Inserisci la tua et&agrave;</label> 
+		<input id type="eta_for" type="number" min="18" max="100" step="5"
+		name="eta_utente">
+	</p>
+	<p>
+		<label>Inserisci una foto del tuo profilo</label>
+		<input type="file" name="immagine_profilo">
+	</p>
+	<p>
+		<label>Hobby</label><br>
+		<input type="checkbox" name="web-design" value="Web Design" checked>Web Design<br>
+		<input type="checkbox" name="web-marketing" value="Web Design" checked>Web Marketing<br>
+		<input type="checkbox" name="web-developer" value="Web Design" checked>Web Developer<br>
+		<input type="checkbox" name="grafica" value="Web Design" checked>Grafica<br>
+	</p> 
+	<p>
+		<label for="url_for">Inserisci l'url del tuo sito web</label><br>
+		<input id="url_for" type="url" name="sitoweb_utente">
+	</p>
+	<p>
+		<label for="password_for">Scegli una password</label><br>
+		<input id="password_for" type="password" name="password_utente" maxlenght="10">
+	</p>
+	<p>
+		<input type="reset" value="Cancella dati inseriti">
+		<input type="image" src="img/button_invia.gif" alt="Invia i dati">
+	</p>
+</form>
+</body>
+</html>
