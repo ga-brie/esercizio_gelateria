@@ -1,4 +1,4 @@
-# esercizio_gelateria
+# Ice Cream Shop: HTML+CSS FLAVOURS
 HTML and CSS exercise for beginners
 
 # READ ME
